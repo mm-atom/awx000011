@@ -1,3 +1,11 @@
-
-export default function awx11(param1: string, param2: string) {
+export default function show_loading(showtitle: string, mask?: boolean) {
+	return new Promise<boolean>((resolve) => {
+		wx.showLoading({
+			mask,
+			title: showtitle,
+			success() {
+				resolve(true);
+			}
+		});
+	});
 }

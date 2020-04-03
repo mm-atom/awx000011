@@ -1,0 +1,6 @@
+	// 显示 loading 提示框
+	await(() => {
+		const p1 = $1;	// 提示的内容
+		const p2 = ${2|false,true|};	// 是否显示透明蒙层，防止触摸穿透，默认：false
+		return awx11(p1, p2);
+	})();
